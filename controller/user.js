@@ -9,7 +9,7 @@ exports.singUp = (req, res) => {
       return res.status(401).json({ error: 'error with the files' });
     }
     const newUser = new User({ ...user, doccument_images: req.file.filename });
-    user.save((error, savedUser) => {
+    newUser.save((error, savedUser) => {
       if (error || !savedUser) {
         return res.status(401).json({ error: 'cannt insert in database' });
       }
