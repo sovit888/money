@@ -1,0 +1,5 @@
+POST http://localhost:2000/api/transaction/5feb1aac2353582eb6aa035a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZmViZTg1MDUxY2M1ZjEwY2I0NzJmM2UiLCJpYXQiOjE2MDkyOTYxNzl9.YLfz-mAHpAzRP7tVmZ0XhgWHRe9FqVWt0nngGQb7uk4
+Content-Type: application/json
+
+{"amount":1000,"receiver_id":"5feb1aac2353582eb6aa035a","received_status":false,"details":"Payment for mastercard"}
